@@ -1,0 +1,24 @@
+{
+  "name": "signal-master",
+  "description": "Simple signaling server for SimpleWebRTC",
+  "version": "1.0.0",
+  "dependencies": {
+    "getconfig": "",
+    "node-uuid": "",
+    "socket.io": "",
+    "yetify": ""
+  },
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:andyet/signal-master.git"
+  },
+  "devDependencies": {
+    "socket.io-client": "",
+    "precommit-hook": "",
+    "tape": ""
+  },
+  "scripts": {
+    "test": "node test.js"
+  }
+}
