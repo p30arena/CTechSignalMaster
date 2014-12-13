@@ -26,7 +26,7 @@ function describeRoom(name) {
         clients: {}
     };
     for(var i in clients) {
-        result.clients[i] = clients[i];
+        result.clients[i] = io.nsps['/'].connected[i].resources;
     }
     return result;
 }
