@@ -86,9 +86,9 @@ io.sockets.on('connection', function (client) {
         if (typeof name !== 'string') return;
         // leave any existing rooms
         removeFeed();
+        safeCb(cb)(null, describeRoom(name));
         client.join(name);
         client.room = name;
-        safeCb(cb)(null, describeRoom(name));
     }
 
     // we don't want to pass "leave" directly because the
